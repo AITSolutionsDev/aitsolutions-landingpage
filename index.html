@@ -10,27 +10,34 @@
   <link rel="icon" type="image/ico" href="/resources/aiticon.ico">
 </head>
 
-<body>
-  <div id="header" class="flex flex-space-between flex-align-center">
+<body class="font-face">
+  <div id="header">
     <img class="company-logo-sm" src="resources/aitsolutions.png" alt="company-logo">
+    <a href="#contact" class="btn btn-margin radius-md">Contáctanos</a>
   </div>
+
   <div>
-    <h1>Contáctanos</h1>
+    <h1 class="ait-color">En Construcción</h1>
+  </div>
+  
+  <div id="contact" class="radius-lg box-width">
+    <h1 class="ait-color contact-form-title">Nosotros nos encargamos de lo difícil, para que tu te centres en tu empresa</h1>
+    <!-- <h1 class="ait-color x-margin">Contáctanos</h1> -->
     <form target="_blank" action="https://formsubmit.co/d80d0fc575dc15e804a1450109e591bc" method="POST">
       <div>
         <div>
-          <div>
-            <input type="text" name="name" placeholder="Nombre" required>
+          <div class="input-margin">
+            <input type="text" class="input-field radius-md full-width font-size-md" name="name" placeholder="Nombre" required>
           </div>
-          <div>
-            <input type="email" name="email" placeholder="Email" required>
+          <div class="input-margin">
+            <input type="email" class="input-field radius-md full-width font-size-md" name="email" placeholder="Email" pattern=".*@.*" required>
           </div>
         </div>
       </div>
-      <div>
-        <textarea placeholder="Mensaje" name="message" rows="10" required></textarea>
+      <div class="input-margin">
+        <textarea class="input-field radius-md full-width font-size-md" name="message" placeholder="Mensaje" rows="10" autocomplete="false" required></textarea>
       </div>
-      <button type="submit">Enviar</button>
+      <button type="submit" class="btn radius-md input-margin">Enviar</button>
     </form>
   </div>
 

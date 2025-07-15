@@ -1,7 +1,19 @@
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('resources/Urbanist.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Tags */
 
 body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 100px 0 0 0;
+    font-family: 'Urbanist';
 }
 
 /* end Tags */
@@ -10,11 +22,28 @@ body {
 /* IDs */
 
 #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     height: 80px;
     width: 100%;
     top: 0px;
+    background-color: white;
     box-shadow: 0 0px 2px 0px #888888;
+}
+
+#contact {
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;    padding: 10px 50px 30px 50px;
+    background: #dfdfdf;
+}
+
+@media (max-width: 500px) {
+    #contact {
+        margin: 5px;    padding: 10px 20px 20px 22px;
+    }
 }
 
 /* end IDs */
@@ -28,21 +57,71 @@ body {
     margin: 12px;
 }
 
-/* end Specific classes */
-
-
-/* Generic classes */
-
-.flex {
-    display: flex;
-}
-
-.flex-space-between {
+.contact-form {
     justify-content: space-between;
 }
 
-.flex-align-center{
-    align-items: center;
+.btn-margin {
+    margin: 19px;
+}
+
+.input-field {
+    border: none;
+    padding: 12px;
+    margin: 6px;
+    resize: none;
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+.contact-form-title {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+/* end Specific classes */
+
+
+/* Global classes */
+
+.ait-color {
+    color: #1C98A2
+}
+
+.font-size-md {
+    font-size: 16px;
+}
+
+.box-width {
+    min-width: 300px;
+    width: 70%;
+}
+
+.btn {
+    color: white;
+    background: #1C98A2 ;
+    padding: 12px;
+    text-decoration: none;
+    border: none;
+    min-width: 70px;
+}
+
+.input-margin {
+    margin-bottom: 10px;
+}
+
+.radius-md {
+    border-radius: 16px;
+}
+
+.radius-lg {
+    border-radius: 24px;
+}
+
+.full-width {
+    width: -webkit-fill-available;
 }
 
 /* end Generic classes */
